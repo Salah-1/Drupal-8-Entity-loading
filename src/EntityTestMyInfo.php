@@ -14,7 +14,7 @@ use Drupal\Core\Messenger\MessengerInterface;
  
 
 /**
- * Prepare the Greetings as service, This is the service itself
+ * Prepare the property as service, This is the service itself
  * It will be Injected into the Controller using constructor and create method
  */
 class EntityTestMyInfo {
@@ -25,7 +25,7 @@ class EntityTestMyInfo {
     * @var \Drupal\Core\Config\ConfigFactoryInterface 
     */
     protected $configFactory;
-    //protected $my_entity;
+    
 
      /**
     * @EntityTestMyInfo constructor.
@@ -33,12 +33,12 @@ class EntityTestMyInfo {
     */
     public function  __construct (ConfigFactoryInterface $config_factory) {
         $this->configFactory = $config_factory;
-       // $this->my_entity = $entity_i;
+        
     }
 
 
     /**
-    * Returns the Greetings  
+    * Returns the property valaues 
     * Check if something has been saved at the config form, then load it
     */
     public function getMyEntityInfo() {  
@@ -53,7 +53,7 @@ class EntityTestMyInfo {
         //$time = new \DateTime(); // Always works, but want use Drupals
 
         $time = new DrupalDateTime(); 
-        // build value to return with retur msg
+        // for now using this call, but later changing to DI
         $query = \Drupal::entityTypeManager()->getStorage('node')->getQuery();
          
         $query->condition('type', 'car')
@@ -89,9 +89,7 @@ class EntityTestMyInfo {
 
     }   // End getSalution method
 
-    public function test_entity(EntityTypeInterface $entity_type) {
-        ksm($entity_type);
-    }
+     
 
     /**
      * Returns render array of MyInfo.
