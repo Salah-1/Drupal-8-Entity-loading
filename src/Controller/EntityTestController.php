@@ -4,7 +4,7 @@ namespace Drupal\entity_test\Controller;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Controller\ControllerBase;
-// The Service class 4 this module.
+// The Service class for this module.
 use Drupal\entity_test\EntityTestMyInfo;
 
 /**

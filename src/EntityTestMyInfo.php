@@ -87,7 +87,7 @@ class EntityTestMyInfo {
                
               
 
-    }   // End getSalution method
+    }   // End get method
 
      
 
