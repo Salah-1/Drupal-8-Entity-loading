@@ -1,0 +1,11 @@
+entity_test.someroute:
+  path: '/route1'
+  defaults:
+    _controller: '\Drupal\entity_test\Controller\EntityTestController::cntrMethod1'
+    _title:  'module [entity_test] route 1: title here'
+  requirements: 
+    _permission: 'access content'
+
+    
+
+     

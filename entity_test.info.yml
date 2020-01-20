@@ -1,0 +1,5 @@
+name:         Entity Test
+description:  New drupal 8 Entity test module(query, load, save etc)
+type:         module
+core:         8.x
+package:      Custom

@@ -1,0 +1,9 @@
+services:
+  entity_test.myinfo:
+    class: Drupal\entity_test\EntityTestMyInfo
+    arguments: ['@config.factory']
+  #entity_test.redirect_subsc:
+  #  class:  Drupal\entity_test\EventSubscriber\Myd8BabyRedirectSubsc
+  #  arguments: ['@current_user', '@current_route_match']
+  #  tags:
+  #    - { name: event_subscriber }
